@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="encriptar.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body class="back">
+        <header>
+            <section class="tittle">
+                <img src="Imágenes/Vector (4).svg"/>
+            </section>
+            <section class="tittle2">
+                <h1>Encriptador</h1>
+            </section>
+        </header>
+        
+        <section class="container">
+            <section class="in">
+                <label id="lbox1">Texto por encriptar</label>
+                <textarea id="box1" placeholder="Ingresa el texto aquí"></textarea>
+                <p>&#9888; Solo letras minúsculas y sin acentos</p>
+                <button id="btn1" class="btn" onclick="encrypt();">Encriptar</button>
+                <button id="btn2" class="btn" onclick="decrypt();">Desencriptar</button>
+            </section>
+            <section class="out" >
+                <label id="lbox2">Resultado</label>
+                <textarea id="box2"></textarea>
+                <button class="btncopy" id="copybtn" value="copy" onclick="copy();">Copiar</button>
+            </section>
+        </section>
+        
+        <hr/>
+
+        <footer>
+            <p class="bottom">&copy;Miguel Tlaxca</p>
+        </footer>
+    </body>
+
+</html>
